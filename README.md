@@ -1,6 +1,4 @@
-# Biostatistical Maze Project — revised Shiny dashboard
-
-This revision replaces the original dashboard's top-level JSON assumptions and greedy Manhattan route estimate with a trial-aware parser, wall-aware maze solver, reconstructed movement/visit stream, and trial-matched comparative analysis.
+# Maus-Maze Project — Shiny dashboard
 
 ## Run the dashboard
 
