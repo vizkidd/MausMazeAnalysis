@@ -20,7 +20,7 @@ shiny::runApp()
 
 The source selector defaults to the two bundled sample JSON exports; click **Load and analyse** to parse them. You can instead select a local folder containing JSON files or upload multiple JSON files from the sidebar. The folder picker exposes available drive roots on Windows (and the file-system root on Unix-like systems); uploads are configured for up to 100 MB per request. CSV export controls are provided for player metrics, tile visits, and the data-quality log. The metric selector includes player-summary measures and event-derived junction decisions, wall collisions, revisits, rapid-input bursts, and junction latency summaries.
 
-`app.R` is the canonical Shiny entry point. `StatsProject-app.R` is kept as a same-content copy for compatibility with the previous project filename. Pathfinding and ingestion functions are in `R/maze_helpers.R`.
+`app.R` is the canonical Shiny entry point.
 
 ## How the game data is interpreted
 
@@ -84,4 +84,4 @@ Run the included checks from the project directory:
 Rscript tests/test_analysis.R
 ```
 
-The test script validates duplicate handling, optimal paths, player phase counts, incomplete checkpoint handling, event-derived visits and event-summary consistency, Phase B exit reconciliation, cell-order-independent maze fingerprints, and synthetic connected/disconnected/boundary-invalid mazes. The checks are included but have not been executed in this environment because an R runtime is unavailable here; see `QA_REPORT.md` for the independent sample-data verification performed during this review.
+The test script validates duplicate handling, optimal paths, player phase counts, incomplete checkpoint handling, event-derived visits and event-summary consistency, Phase B exit reconciliation, cell-order-independent maze fingerprints, and synthetic connected/disconnected/boundary-invalid mazes.
